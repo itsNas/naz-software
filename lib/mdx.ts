@@ -1,75 +1,75 @@
-import fs from 'node:fs'
-import path from 'node:path'
-import matter from 'gray-matter'
+import fs from "node:fs"
+import path from "node:path"
+import matter from "gray-matter"
 
 export type ProjectMetadata = {
-    name: string
-    description: string
-    url: string
-    github: string
-    techstack: Array<{ label: string }>
-    selected: boolean
-    slug: string
+  name: string
+  description: string
+  url: string
+  github: string
+  techstack: Array<{ label: string }>
+  selected: boolean
+  slug: string
 }
 
 export type PageMetadata = {
-    slug: string
+  slug: string
 }
 
-const mdxFilesRootDirectory = path.join(process.cwd(), 'contents')
+const mdxFilesRootDirectory = path.join(process.cwd(), "contents")
 
 const readFile = (filePath: string) => {
-    return fs.readFileSync(filePath, 'utf8')
+  return fs.readFileSync(filePath, "utf8")
 }
 
 const readMDXFile = <T>(filePath: string) => {
-    const rawContent = readFile(filePath)
-    const { content, data } = matter(rawContent)
+  const rawContent = readFile(filePath)
+  const { content, data } = matter(rawContent)
 
-    return {
-        content,
-        metadata: data as T,
-    }
+  return {
+    content,
+    metadata: data as T,
+  }
 }
 
 export const getPage = <T>(filePath: string) => {
-    const fullPath = path.join(mdxFilesRootDirectory, `${filePath}.mdx`)
+  const fullPath = path.join(mdxFilesRootDirectory, `${filePath}.mdx`)
 
-    if (!fs.existsSync(fullPath)) {
-        return null
-    }
+  if (!fs.existsSync(fullPath)) {
+    return null
+  }
 
-    const { content, metadata } = readMDXFile<T>(fullPath)
+  const { content, metadata } = readMDXFile<T>(fullPath)
 
-    return {
-        content,
-        metadata: {
-            ...metadata,
-            slug: filePath.split('/').pop(),
-        } as T,
-    }
+  return {
+    content,
+    metadata: {
+      ...metadata,
+      slug: filePath.split("/").pop(),
+    } as T,
+  }
 }
 type Options = {
-    limit?: number
+  limit?: number
 }
 
 export const getAllPages = <T>(directoryPath: string, options: Options = {}) => {
-    const { limit } = options
+  const { limit } = options
 
-    const pagesDirectory = path.join(mdxFilesRootDirectory, directoryPath)
+  const pagesDirectory = path.join(mdxFilesRootDirectory, directoryPath)
 
-    const fileNames = fs.readdirSync(pagesDirectory)
+  const fileNames = fs.readdirSync(pagesDirectory)
 
-    return fileNames
-        .map((fileName) => {
-            const slug = fileName.replace(/\.mdx$/, '')
-            const fullPath = path.join(pagesDirectory, fileName)
-            const { metadata } = readMDXFile<T>(fullPath)
+  return fileNames
+    .map((fileName) => {
+      const slug = fileName.replace(/\.mdx$/, "")
+      const fullPath = path.join(pagesDirectory, fileName)
+      const { metadata } = readMDXFile<T>(fullPath)
 
-            return {
-                ...metadata,
-                slug,
-            } as T
-        })
-        .slice(0, limit)
+      return {
+        ...metadata,
+        slug,
+      } as T
+    })
+    .slice(0, limit)
 }

@@ -1,15 +1,15 @@
-'use client'
+"use client"
 
-import React from 'react'
-import Script from 'next/script'
+import React from "react"
+import Script from "next/script"
 
 export function SubscribeForm({ className }: { className?: string }) {
-    return (
-        <div className={className}>
-            <div id='custom-substack-embed' />
+  return (
+    <div className={className}>
+      <div id='custom-substack-embed' />
 
-            <Script id='substack-signup' strategy='afterInteractive'>
-                {`
+      <Script id='substack-signup' strategy='afterInteractive'>
+        {`
                      window.CustomSubstackWidget = {
                         substackUrl: "matteogiardino.substack.com",
                         placeholder: "la tua email",
@@ -23,9 +23,9 @@ export function SubscribeForm({ className }: { className?: string }) {
                         },
                     }
                 `}
-            </Script>
+      </Script>
 
-            <Script src='https://substackapi.com/widget.js' async />
-        </div>
-    )
+      <Script src='https://substackapi.com/widget.js' async />
+    </div>
+  )
 }
