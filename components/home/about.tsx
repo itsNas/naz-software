@@ -7,10 +7,11 @@ import { UtmUrl } from "@/utils/urls"
 import { IconArrowRight } from "@tabler/icons-react"
 import { gsap, Linear } from "gsap"
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
-import GoogleLogo from "public/images/brands/google.svg"
-import WezardLogo from "public/images/brands/wezard-icon.png"
-import DevvLogo from "public/images/projects/devv/icon.webp"
-import WestudentsLogo from "public/images/projects/westudents/icon.webp"
+
+// import GoogleLogo from "public/images/brands/google.svg"
+// import WezardLogo from "public/images/brands/wezard-icon.png"
+// import DevvLogo from "public/images/projects/devv/icon.webp"
+// import WestudentsLogo from "public/images/projects/westudents/icon.webp"
 
 import { UtmMediums } from "@/types/links"
 import { Routes } from "@/config/routes"
@@ -108,123 +109,52 @@ export function About() {
       <div ref={targetSection}>
         <div ref={quoteRef} className='space-y-24 text-2xl sm:text-4xl md:text-5xl'>
           <h2 className='about-1 leading-tight'>
-            👶 sono nato a <strong className='underline decoration-yellow-400 underline-offset-8'>Torino</strong>, nel
-            1998
+            👶 I was born in <strong className='underline decoration-yellow-400 underline-offset-8'>Alor Setar</strong>{" "}
+            in 1995
           </h2>
 
           <h2 className='about-2 leading-tight'>
-            fin da piccolo, ho sempre cercato <span className='t2 text-highlight font-bold'>modi originali</span> per
-            esprimere la mia creatività
+            From a young age, I have always sought ways to express myself and provide value to others
           </h2>
 
           <h2 className='about-3 leading-tight'>
-            a 16 anni, ho scoperto la 💻 <span className='text-highlight t3 font-bold'> programmazione </span>
+            I pursued a degree in mechanical engineering and began my career in the oil and gas industry
           </h2>
 
           <h2 className='about-4 leading-tight'>
-            a 18 anni, ho {""}
-            <strong className='underline decoration-red-400 underline-offset-8'>abbandonato</strong>
-            {""} gli studi e {""}
-            <strong className='underline decoration-red-400 underline-offset-8'>rifiutato</strong>
-            {""} un lavoro da {""}
-            <Image className='inline-block h-12 md:h-16' src={GoogleLogo} alt='Google logo' height={48} width={150} />
+            In 2022, I discovered 💻 <span className='text-highlight t3 font-bold'>programming</span> and quickly
+            developed a passion for it
           </h2>
 
           <h2 className='about-5 leading-tight'>
-            deluso dal sistema scolastico, ho creato la mia prima azienda:{" "}
-            <strong className='inline-block'>
-              <Image
-                src={WestudentsLogo}
-                alt='Westudents logo'
-                height={48}
-                width={48}
-                className='-mt-1 mr-2 inline-block size-7 rounded md:-mt-2 md:mr-3 md:size-12 md:rounded-xl'
-              />
-              <Link
-                href={UtmUrl("https://westudents.it", {
-                  medium: UtmMediums.Homepage,
-                  content: "about",
-                })}
-                className='bg-gradient-to-l from-red-400 to-orange-400 bg-clip-text text-transparent decoration-orange-400 underline-offset-8 hover:underline'>
-                westudents
-              </Link>{" "}
-            </strong>
-            <p className='ml-2 mt-6 text-base text-muted-foreground md:text-xl'>
-              🎉 ad oggi l'app di westudents ha aiutato quasi{" "}
-              <strong className='underline underline-offset-4 '>500.000</strong> studenti 🎉
-            </p>
+            I taught myself to code after work and eventually landed my first software engineering job at a small
+            software agency
           </h2>
 
           <h2 className='about-6 leading-tight'>
-            nel 2022 ho fondato{" "}
-            <strong className='inline-block'>
-              <Image
-                src={DevvLogo}
-                alt='Devv logo'
-                height={48}
-                width={48}
-                className='border-accent-3 -mt-1 mr-2 inline-block size-7 rounded border md:-mt-2 md:mr-3 md:size-12 md:rounded-xl'
-              />
-              <Link
-                href={UtmUrl("https://devv.it", {
-                  medium: UtmMediums.Homepage,
-                  content: "about",
-                })}
-                className='bg-gradient-to-l from-purple-300 to-purple-500 bg-clip-text text-transparent decoration-purple-400 underline-offset-8 hover:underline'>
-                devv
-              </Link>
-            </strong>
-            , con l'obiettivo di rivoluzionare il modo in cui si impara a{" "}
-            <strong className='underline decoration-purple-400 underline-offset-8'>programmare</strong>
-            <p className='ml-2 mt-6 text-base text-muted-foreground md:text-xl'>
-              🎉 più di <strong className='underline underline-offset-4 '>130.000</strong> persone mi seguono per
-              imparare a programmare 🎉
-            </p>
+            After a year, I decided to embark on my own journey as an indie hacker
           </h2>
 
-          <div>
-            <h2 className={"about-7 leading-tight"}>
-              a gennaio 2024 ho venduto{" "}
-              <strong className='inline-block'>
-                <Image
-                  src={WezardLogo}
-                  alt='Devv logo'
-                  height={48}
-                  width={48}
-                  className='border-accent-3 -mt-1 mr-2 inline-block size-7 rounded border md:-mt-2 md:mr-3 md:size-12 md:rounded-xl'
-                />
-                <Link
-                  href={UtmUrl("https://wezard.it", {
-                    medium: UtmMediums.Homepage,
-                    content: "about",
-                  })}
-                  className='bg-gradient-to-l from-lime-200 to-lime-300 bg-clip-text text-transparent decoration-lime-400 underline-offset-8 hover:underline'>
-                  wezard
-                </Link>
-                ,
-              </strong>{" "}
-              un agenzia di sviluppo che crea{" "}
-              <strong className='underline decoration-lime-300 underline-offset-8'>
-                prodotti digitali eccezionali
-              </strong>
-            </h2>
+          <h2 className='about-7 leading-tight'>
+            I founded <strong className='underline decoration-purple-400 underline-offset-8'>CreateShorts.io</strong>,
+            with the goal of revolutionizing content creation, especially short-form videos, using AI technology
+          </h2>
 
-            <Button variant={"ghost"} className='group -ml-4 mt-6 text-muted-foreground md:text-xl' asChild>
-              <Link
-                href={UtmUrl(Routes.Contact, {
-                  medium: UtmMediums.Homepage,
-                  content: "about",
-                })}>
-                💡 vuoi realizzare un progetto con me?
-                <strong className='mx-2 underline underline-offset-4'>scrivimi</strong>
-                <IconArrowRight className='inline-block size-5 transition-transform duration-200 group-hover:translate-x-1' />
-              </Link>
-            </Button>
-          </div>
+          <Button variant={"ghost"} className='group -ml-4 mt-6 text-muted-foreground md:text-xl' asChild>
+            <Link
+              href={UtmUrl(Routes.Contact, {
+                medium: UtmMediums.Homepage,
+                content: "about",
+              })}>
+              💡 Have a project in mind?
+              <strong className='mx-2 underline underline-offset-4'>Get in touch</strong>
+              <IconArrowRight className='inline-block size-5 transition-transform duration-200 group-hover:translate-x-1' />
+            </Link>
+          </Button>
         </div>
       </div>
 
-      <div className='relative isolate mt-32'>
+      <div className='relative isolate mt-36'>
         <Background />
 
         <div className='flex flex-col gap-10 md:grid md:grid-cols-3 md:grid-rows-1'>
@@ -249,7 +179,7 @@ export function About() {
             />
           </div>
 
-          <div className='relative aspect-square '>
+          <div className='relative aspect-square'>
             <Image
               src='/images/home/3.webp'
               alt=''
@@ -293,7 +223,6 @@ export function About() {
     </section>
   )
 }
-
 function Background() {
   return (
     // eslint-disable-next-line tailwindcss/no-contradicting-classname

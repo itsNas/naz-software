@@ -24,13 +24,13 @@ export function Hero() {
           <div className='mt-12 flex flex-col items-center'>
             {/* Name */}
             <h1 className='bg-gradient-to-b from-black via-black/90 to-black/70 to-90% bg-clip-text text-center text-4xl font-bold text-transparent dark:from-white dark:via-white/80 dark:to-white/60 md:text-7xl'>
-              Matteo Giardino
+              Nasrullah Saloji
             </h1>
 
             {/* Occupation and description */}
             <div className='my-6 space-y-2'>
               <h2 className='flex flex-wrap items-center justify-center gap-4 text-sm font-medium leading-8 md:text-base'>
-                founder & cto @
+                founder & developer @
                 <Button variant='secondary' size={"sm"} className='border bg-muted px-2' asChild>
                   <Link
                     href={UtmUrl("https://westudents.it", {
@@ -92,7 +92,7 @@ export function Hero() {
             {/* CTA */}
             <Button variant={"ghost"} className='-ml-4' asChild>
               <Link href='#about'>
-                <p className='mr-2'>ti racconto chi sono, in 30 secondi </p>
+                <p className='mr-2'>I'll tell you who I am in 30 seconds </p>
                 <p className='inline-block animate-bounce'> ↓ </p>
               </Link>
             </Button>
@@ -127,8 +127,8 @@ export function Hero() {
                   medium: UtmMediums.Homepage,
                   content: "hero",
                 })}>
-                wezard, la mia agenzia di sviluppo, è stata acquisita 🎉
-                <span className='ml-1 underline underline-offset-2'> leggi l'annuncio</span>
+                Snapshorts, my first SaaS has been launched! 🎉{" "}
+                <span className='ml-1 underline underline-offset-2'>Learn more in this post</span>
               </Link>
             </div>
           </div>
