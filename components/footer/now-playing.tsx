@@ -70,13 +70,13 @@ const NowPlaying = () => {
           {response?.data?.isPlaying ? (
             <>
               <a href='https://open.spotify.com/user/1189222906' target='_blank' rel='noopener noreferrer'>
-                <span className='text-muted-foreground'>In questo momento sto ascoltando </span>
+                <span className='text-muted-foreground'>Right now I'm listening to </span>
                 {response.data.name}
                 <span className='text-muted-foreground'> - {response.data.artist}</span>
               </a>
             </>
           ) : (
-            "In questo momento non sto ascoltando musica."
+            "I'm not listening to music right now."
           )}
         </p>
       </div>

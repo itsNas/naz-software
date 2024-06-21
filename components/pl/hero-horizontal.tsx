@@ -26,9 +26,7 @@ const Section: React.FC = () => {
       <div className='relative pt-20 md:pt-0'>
         <div className='gap-12 md:flex md:items-center'>
           <div className='text-center sm:px-12 md:w-2/3 md:px-0 md:text-left lg:w-3/5'>
-            <p className='inline-block rounded-md bg-accent bg-opacity-20 px-2 py-1 text-sm'>
-              🎉 Riaprono le iscrizioni!
-            </p>
+            <p className='inline-block rounded-md bg-accent/20 px-2 py-1 text-sm'>🎉 Riaprono le iscrizioni!</p>
             <h1 className='mt-6 text-5xl font-black dark:text-white md:text-6xl xl:text-7xl'>
               Programmatore
               <Image src={Logo} alt='logo' className='inline-block h-full w-[80%] fill-current' />

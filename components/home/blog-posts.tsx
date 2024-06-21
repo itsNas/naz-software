@@ -17,9 +17,9 @@ export async function BlogPosts() {
       <div className='flex flex-col items-start justify-between gap-4 md:flex-row md:items-end'>
         <div className='flex-auto'>
           <h2 className='text-balance text-3xl font-bold'>
-            cose che ho scritto <strong className='underline decoration-sky-400 underline-offset-4'>per te</strong>
+            Things I've written <strong className='underline decoration-sky-400 underline-offset-4'>for you</strong>
           </h2>
-          <p className='mt-2 text-balance text-muted-foreground'>leggi gli articoli e pensieri che scritto</p>
+          <p className='mt-2 text-balance text-muted-foreground'>Read the articles and thoughts I've written</p>
         </div>
 
         <Button variant='ghost' className='group -mx-3 text-muted-foreground md:mx-0' size='sm' asChild>
@@ -28,7 +28,7 @@ export async function BlogPosts() {
               medium: UtmMediums.Homepage,
               content: "all_posts_cta",
             })}>
-            tutti gli articoli
+            all articles
             <IconArrowRight className='ml-2 inline-block size-5 transition-transform duration-200 group-hover:translate-x-1' />
           </Link>
         </Button>

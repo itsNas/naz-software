@@ -10,9 +10,9 @@ import { CalendarEmbed } from "@/components/calendar-embed"
 import { Icon } from "@/components/icon"
 import { PageTitle } from "@/components/page-title"
 
-const title = "contatti"
+const title = "contacts"
 const description =
-  "che tu voglia conoscermi, parlarmi di un progetto o una collaborazione, scrivimi. Nasce sempre qualcosa di bello da un messaggio."
+  "Whether you want to get to know me, talk to me about a project, or collaborate, write to me. Something beautiful always comes from a message."
 
 type Props = {
   params: Record<string, never>
@@ -47,8 +47,8 @@ export default function Page() {
   return (
     <>
       <PageTitle
-        title='come contattarmi'
-        description='che tu voglia conoscermi, parlarmi di un progetto o una collaborazione, scrivimi. Nasce sempre qualcosa di bello da un messaggio.'
+        title='How to contact me'
+        description='Whether you want to get to know me, talk to me about a project, or collaborate, write to me. Something beautiful always comes from a message.'
         fromColor='from-red-400'
         toColor='to-blue-500'
       />
@@ -63,7 +63,7 @@ export default function Page() {
               className='group flex flex-row items-center space-x-4 rounded-lg border bg-muted p-4 transition-all duration-150 hover:bg-accent'>
               <Image
                 src={link.logo}
-                alt={link.name + " logo"}
+                alt={`${link.name} logo`}
                 width={32}
                 height={32}
                 className='-mt-1 mr-2 inline-block size-9 rounded-lg border-2'
@@ -77,7 +77,7 @@ export default function Page() {
         })}
       </div>
 
-      <h2 className='mt-16 text-xl font-bold md:text-2xl'>Facciamo due chiacchiere</h2>
+      <h2 className='mt-16 text-xl font-bold md:text-2xl'>Let's have a chat</h2>
       <div className='mt-4'>
         <CalendarEmbed />
       </div>

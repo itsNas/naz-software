@@ -17,7 +17,7 @@ export function Problem() {
   return (
     <section id='problem' className='border-b border-neutral-700 pb-16 pt-32 lg:pb-24'>
       <div className='max-w-3xl'>
-        <p className='mb-6 inline-block rounded-full border border-yellow-500 bg-yellow-700 bg-opacity-20 px-3 py-1 text-sm leading-7 text-yellow-300'>
+        <p className='mb-6 inline-block rounded-full border border-yellow-500 bg-yellow-700/20 px-3 py-1 text-sm leading-7 text-yellow-300'>
           Il problema
         </p>
         <h2 className='text-3xl font-extrabold text-white lg:text-5xl lg:leading-tight'>

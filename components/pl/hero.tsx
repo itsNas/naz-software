@@ -40,9 +40,7 @@ export function Hero() {
       <div className='relative pt-8 md:pt-0'>
         <div className='gap-12'>
           <div className='text-center sm:px-12'>
-            <p className='inline-block rounded-md bg-accent bg-opacity-20 px-2 py-1 text-sm'>
-              🎉 Riaprono le iscrizioni!
-            </p>
+            <p className='inline-block rounded-md bg-accent/20 px-2 py-1 text-sm'>🎉 Riaprono le iscrizioni!</p>
             <h1 className='mt-6 text-5xl font-black dark:text-white md:text-6xl xl:text-6xl'>
               Programmatore
               <Image src={Logo} alt='logo' className='inline-block h-full w-[60%] fill-current' />

@@ -11,10 +11,10 @@ import { LinkCard } from "../link-card"
 import { Button } from "../ui/button"
 
 const stats = [
-  { name: "followers tiktok", value: "113.000+" },
-  { name: "followers instagram", value: "14.000+" },
-  { name: "corsisti", value: "900+" },
-  { name: "visualizzazioni totali", value: "266.7 mln" },
+  { name: "TikTok followers", value: "113,000+" },
+  { name: "Instagram followers", value: "14,000+" },
+  { name: "course participants", value: "900+" },
+  { name: "total views", value: "266.7 million" },
 ]
 
 export function Followers() {
@@ -46,12 +46,11 @@ export function Followers() {
         <div className='flex-auto'>
           <div>
             <h2 className='text-4xl font-bold tracking-tight sm:text-5xl'>
-              <strong className='underline decoration-sky-400 underline-offset-8'>130.000+</strong> studenti.
+              <strong className='underline decoration-sky-400 underline-offset-8'>130,000+</strong> students.
             </h2>
             <p className='mt-6 max-w-lg text-lg leading-8 text-muted-foreground'>
-              la programmazione ha rivoluzionato la mia vita. <br /> per questo motivo ogni giorno mi impegno a
-              diffondere la mia passione fornendo <strong>strumenti e risorse</strong> per rendere l'apprendimento
-              accessibile a tutti.
+              Programming has revolutionized my life. <br /> This is why every day I strive to spread my passion by
+              providing <strong>tools and resources</strong> to make learning accessible to everyone.
             </p>
           </div>
 
@@ -85,10 +84,10 @@ export function Followers() {
       <div className='mt-24 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end'>
         <div className='flex-auto '>
           <h2 className='text-balance text-3xl font-bold '>
-            i miei prodotti di <strong className='underline decoration-sky-400 underline-offset-4'>formazione</strong>
+            My <strong className='underline decoration-sky-400 underline-offset-4'>training products</strong>
           </h2>
           <p className='mt-2 text-balance text-muted-foreground '>
-            posso insegnarti a programmare o trasformarti in un vero professionista
+            I can teach you to program or turn you into a true professional
           </p>
         </div>
 
@@ -98,7 +97,7 @@ export function Followers() {
               medium: UtmMediums.Homepage,
               content: "followers",
             })}>
-            tutti i prodotti
+            all products
             <IconArrowRight className='ml-2 inline-block size-5 transition-transform duration-200 group-hover:translate-x-1' />
           </Link>
         </Button>

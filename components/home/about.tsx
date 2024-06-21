@@ -136,7 +136,7 @@ export function About() {
           </h2>
 
           <h2 className='about-7 leading-tight'>
-            I founded <strong className='underline decoration-purple-400 underline-offset-8'>CreateShorts.io</strong>,
+            I founded <strong className='underline decoration-purple-400 underline-offset-8'>Snapshorts.ai</strong>,
             with the goal of revolutionizing content creation, especially short-form videos, using AI technology
           </h2>
 

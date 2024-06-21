@@ -27,7 +27,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: (typeof testimonials)[0
           </div>
         </figcaption>
         <blockquote className='mt-6 text-muted-foreground'>
-          <p>{testimonial.testimonial} </p>
+          <p>{testimonial.testimonial}</p>
         </blockquote>
       </figure>
     </li>
@@ -54,14 +54,14 @@ export function Testimonials({ className }: Props) {
           <figure className='mt-10'>
             <blockquote className='text-accent-7 text-center text-xl font-semibold leading-8 sm:text-2xl sm:leading-9'>
               <p>
-                “Ho avuto modo di conoscere persone{" "}
+                “I have met people{" "}
                 <strong className='underline decoration-sky-400 underline-offset-4'>
-                  competenti sul lato tecnico{" "}
+                  competent in technical aspects{" "}
                 </strong>
-                e persone competenti sul lato commerciale e di crescita. Poche persone comprendono in profondità tutti e
-                due i temi e sanno portare valore ovunque serva a livello sia pratico che strategico,{" "}
+                and people competent in business and growth. Few people deeply understand both areas and know how to
+                bring value practically and strategically,{" "}
                 <strong className='underline decoration-sky-400 underline-offset-4'>
-                  Matteo è uno di questi unicorni{" "}
+                  Matteo is one of these unicorns{" "}
                 </strong>
                 ”
               </p>
@@ -72,7 +72,7 @@ export function Testimonials({ className }: Props) {
                 src='/images/testimonials/pietro-campanella.webp'
                 width={40}
                 height={40}
-                alt='Pietro campanella'
+                alt='Pietro Campanella'
               />
               <div className='mt-4 flex flex-col items-center justify-center text-base md:flex-row md:gap-3'>
                 <div className='font-semibold'>Pietro Campanella</div>
@@ -84,7 +84,7 @@ export function Testimonials({ className }: Props) {
                   className='hidden fill-gray-300 md:block'>
                   <circle cx={1} cy={1} r={1} />
                 </svg>
-                <div className='text-gray-300'>ceo @ revenue farm</div>
+                <div className='text-gray-300'>CEO @ Revenue Farm</div>
               </div>
             </figcaption>
           </figure>

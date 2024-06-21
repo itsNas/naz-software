@@ -23,7 +23,7 @@ export function CalendarButton(props: ButtonProps) {
       data-cal-link='matteo-giardino/19min'
       data-cal-config='{"layout":"month_view"}'
       {...props}>
-      fissa una call
+      schedule a call
     </Button>
   )
 }

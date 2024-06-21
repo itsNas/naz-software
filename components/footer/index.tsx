@@ -88,7 +88,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className='mt-20 text-sm'>&copy; Matteo Giardino, {new Date().getFullYear()}</div>
+      <div className='mt-20 text-center text-sm'>&copy; Nasrullah Saloji, {new Date().getFullYear()}</div>
     </footer>
   )
 }

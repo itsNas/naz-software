@@ -7,9 +7,9 @@ import { FilteredPosts } from "@/components/blog/filtered-posts"
 import { SubscribeForm } from "@/components/blog/subscribe-form"
 import { PageTitle } from "@/components/page-title"
 
-const title = "articoli"
+const title = "articles"
 const description =
-  "un remoto angolo del web che posso riempire di articoli, storie e guide. Tanto chi legge i blog nel 2024?"
+  "a remote corner of the web where I can fill with articles, stories, and guides. Who reads blogs in 2024 anyway?"
 
 type Props = {
   params: Record<string, never>
@@ -46,8 +46,8 @@ export default async function Page() {
   return (
     <>
       <PageTitle
-        title='articoli. storie. guide.'
-        description='sarò onesto, la scrittura non è il mio punto forte. Non è che non mi piaccia, ma spesso mi spaventa affrontare una pagina bianca da riempire con parole. Proprio per questo, ho deciso di sfidare me stesso creando questo piccolo angolo del web, un posto dove allenarmi a scrivere. Tanto chi legge i blog nel 2024?'
+        title='Articles. Stories. Guides.'
+        description="I'll be honest, writing is not my strong suit. It's not that I don't like it, but often I find it daunting to face a blank page to fill with words. That's exactly why I decided to challenge myself by creating this little corner of the web, a place where I can practice writing. Who reads blogs in 2024 anyway?"
         fromColor='from-purple-400'
         toColor='to-pink-600'
       />

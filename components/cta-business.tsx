@@ -21,7 +21,7 @@ export function CtaBusiness({ medium, className }: Props) {
         <div className='relative isolate overflow-hidden rounded-3xl border bg-muted px-6 pt-8 shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0'>
           <svg
             viewBox='0 0 1024 1024'
-            className=' absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 opacity-25 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0'
+            className='absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-y-1/2 opacity-25 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0'
             aria-hidden='true'>
             <circle cx={512} cy={512} r={512} fill='url(#759c1415-0410-454c-8f7c-9a820de03641)' fillOpacity='0.7' />
             <defs>
@@ -33,9 +33,9 @@ export function CtaBusiness({ medium, className }: Props) {
           </svg>
 
           <div className='max-w-md text-left sm:m-auto sm:text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left'>
-            <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>trasformo la tua visione in realtà.</h2>
+            <h2 className='text-3xl font-bold tracking-tight sm:text-4xl'>I turn your vision into reality.</h2>
             <p className='mt-6 text-lg leading-8 text-muted-foreground'>
-              sono pronto a fare tutto il necessario per aiutare te o la tua azienda a creare un prodotto di successo
+              I am ready to do whatever it takes to help you or your business create a successful product
             </p>
             <div className='mt-10 flex items-center justify-start gap-x-6 sm:justify-center lg:justify-start'>
               <Button asChild>
@@ -44,7 +44,7 @@ export function CtaBusiness({ medium, className }: Props) {
                     medium: medium,
                     content: "business_cta",
                   })}>
-                  contattami
+                  contact me
                 </Link>
               </Button>
             </div>

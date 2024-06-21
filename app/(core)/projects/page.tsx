@@ -9,9 +9,9 @@ import { Routes } from "@/config/routes"
 import { PageTitle } from "@/components/page-title"
 import { ProjectCollabCard } from "@/components/project-collab-card"
 
-const title = "progetti"
+const title = "projects"
 const description =
-  "esplora i progetti che ho realizzato in passato. Alcuni progetti sono nati da un mio bisogno personale, mentre altri sono frutto di collaborazioni con brillanti imprenditori motivati a trasformare le idee in realtà."
+  "Explore the projects I have completed in the past. Some projects were born from my personal needs, while others are the result of collaborations with brilliant entrepreneurs motivated to turn ideas into reality."
 
 type Props = {
   params: Record<string, never>
@@ -46,8 +46,8 @@ export default function Page() {
   return (
     <>
       <PageTitle
-        title='i miei progetti'
-        description='esplora i progetti che ho realizzato in passato. Alcuni progetti sono nati da un mio bisogno personale, mentre altri sono frutto di collaborazioni con brillanti imprenditori motivati a trasformare le idee in realtà. Ogni lavoro però è stato guidato dalla stessa volontà di superare delle sfide e ottenere risultati straordinari.'
+        title='my projects'
+        description='Explore the projects I have completed in the past. Some projects were born from my personal needs, while others are the result of collaborations with brilliant entrepreneurs motivated to turn ideas into reality. Every work, however, was driven by the same desire to overcome challenges and achieve extraordinary results.'
         fromColor='from-sky-400'
         toColor='to-purple-600'
       />
@@ -80,11 +80,9 @@ export default function Page() {
       <div className='mt-24 flex flex-col items-start justify-between md:flex-row md:items-end'>
         <div className='flex-auto'>
           <h2 className='text-3xl font-bold'>
-            progetti su cui ho <strong className='underline decoration-sky-400 underline-offset-4'>collaborato</strong>
+            rojects I have <strong className='underline decoration-sky-400 underline-offset-4'>collaborated</strong> on
           </h2>
-          <p className='mt-2 text-muted-foreground'>
-            i prodotti digitali più entusiasmanti in cui ho dato un contributo
-          </p>
+          <p className='mt-2 text-muted-foreground'>the most exciting digital products I have contributed to</p>
         </div>
       </div>
 

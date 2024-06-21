@@ -36,7 +36,7 @@ export function Hero() {
       {/* Content */}
       <div className='-mt-20 flex h-screen pt-8 text-center sm:px-12 md:pt-0'>
         <div className='m-auto flex flex-col items-center'>
-          <p className='inline-block rounded-md bg-accent bg-opacity-20 px-2 py-1 text-sm'>⏳ Coming Soon</p>
+          <p className='inline-block rounded-md bg-accent/20 px-2 py-1 text-sm'>⏳ Coming Soon</p>
           <h1 className='mt-6 text-5xl font-black dark:text-white md:text-6xl xl:text-6xl'>
             Tech Career
             <Image src={Logo} alt='logo' className='m-auto h-full w-[60%] fill-current' />

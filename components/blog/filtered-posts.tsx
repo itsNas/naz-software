@@ -21,8 +21,8 @@ export function FilteredPosts({ posts }: { posts: BlogPostPreview[] }) {
           type='text'
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
-          placeholder='cerca un articolo'
-          aria-label='cerca un articolo'
+          placeholder='Search articles'
+          aria-label='Search articles'
           className='w-full pl-12'
           id='search'
         />
@@ -31,7 +31,7 @@ export function FilteredPosts({ posts }: { posts: BlogPostPreview[] }) {
         </Label>
       </div>
 
-      {filteredPosts.length === 0 && <div className='text-center text-xl'>Non ci sono articoli per il momento</div>}
+      {filteredPosts.length === 0 && <div className='text-center text-xl'>There are no articles at the moment</div>}
 
       <div className='-mx-4 grid gap-4 sm:grid-cols-2'>
         {filteredPosts.map((post) => (

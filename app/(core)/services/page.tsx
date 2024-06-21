@@ -11,9 +11,9 @@ import { Testimonials } from "@/components/home/testimonials"
 import { Icon } from "@/components/icon"
 import { PageTitle } from "@/components/page-title"
 
-const title = "servizi"
+const title = "services"
 const description =
-  "esplora i servizi che offro per aziende e imprenditori. Voglio dare la direzione necessaria per aiutare un imprenditore a raggiungere qualsiasi tipo di successo"
+  "Explore the services I offer for businesses and entrepreneurs. I aim to provide the direction needed to help an entrepreneur achieve any type of success."
 
 type Props = {
   params: Record<string, never>
@@ -48,10 +48,8 @@ export default function Page() {
   return (
     <>
       <PageTitle
-        title='servizi per aziende e imprenditori'
-        description='ho avuto la fortuna di conoscere brillandti imprenditori con grandi idee. A tutti però mancava una
-                            cosa: la conoscenza tecnologica necessaria per sbloccare il pieno potenziale. Voglio dare la
-                            direzione necessaria per aiutare un imprenditore a raggiungere qualsiasi tipo di successo.'
+        title='services for businesses and entrepreneurs'
+        description='I have been fortunate to meet brilliant entrepreneurs with great ideas. However, they all lacked one thing: the technological knowledge needed to unlock their full potential. I aim to provide the direction necessary to help an entrepreneur achieve any type of success.'
         fromColor='from-green-400'
         toColor='to-blue-500'
       />
@@ -77,7 +75,7 @@ export default function Page() {
               </div>
               <div className='flex flex-none flex-col'>
                 <div className='flex items-center justify-end gap-2 md:flex-col md:items-end md:gap-1'>
-                  <p className='text-right text-xs text-muted-foreground'>a partire da</p>
+                  <p className='text-right text-xs text-muted-foreground'>starting from</p>
                   <p className='text-right font-semibold leading-tight'> {service.min_price}</p>
                 </div>
                 <Button asChild size={"sm"} className='mt-2 md:mt-4'>
@@ -86,7 +84,7 @@ export default function Page() {
                       medium: UtmMediums.Services,
                       content: "service_card",
                     })}>
-                    contattami
+                    contact me
                   </Link>
                 </Button>
               </div>

@@ -32,24 +32,24 @@ export function Navbar() {
   return (
     <NavigationMenu className='hidden md:block'>
       <NavigationMenuList key={"navbar"}>
-        {/* Per le aziende */}
+        {/* For Businesses */}
         <NavigationMenuItem key='business-menu-item'>
-          <NavigationMenuTrigger>per le aziende</NavigationMenuTrigger>
+          <NavigationMenuTrigger>for businesses</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className='grid gap-2 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]'>
               <li className='row-span-3'>
                 <NavigationMenuLink asChild>
                   <Link
-                    className='flex size-full select-none flex-col justify-end rounded-md bg-opacity-20 bg-gradient-to-b from-sky-700 to-sky-950 p-3 no-underline outline-none focus:shadow-md'
+                    className='flex size-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-sky-700 to-sky-950 p-3 no-underline outline-none focus:shadow-md'
                     href={UtmUrl(Routes.Services, {
                       medium: UtmMediums.Navbar,
                     })}>
-                    <div className='text-lg font-semibold leading-tight'>servizi per le aziende</div>
+                    <div className='text-lg font-semibold leading-tight'>services for businesses</div>
                     <p className='mt-2 text-sm leading-tight text-sky-100'>
-                      aiuto aziende e imprenditori a sbloccare il loro potenziale con la tecnologia.
+                      I help businesses and entrepreneurs unlock their potential with technology.
                     </p>
                     <p className='mt-4 text-sm underline underline-offset-2'>
-                      scopri tutti i servizi <ArrowUpRight className='ml-1 inline-block size-4' />
+                      discover all services <ArrowUpRight className='ml-1 inline-block size-4' />
                     </p>
                   </Link>
                 </NavigationMenuLink>
@@ -62,16 +62,16 @@ export function Navbar() {
                   })}
                   title={service.title}
                   icon={service.icon}>
-                  {service.short_desctiption}
+                  {service.short_description}
                 </ListItem>
               ))}
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
-        {/* Prodotti di formazione */}
+        {/* Training Products */}
         <NavigationMenuItem key='learn-menu-item'>
-          <NavigationMenuTrigger>prodotti di formazione</NavigationMenuTrigger>
+          <NavigationMenuTrigger>training products</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className='grid w-[400px] grid-cols-1 gap-2 p-4 md:w-[500px] lg:w-[500px]'>
               {products.map((product) => (
@@ -111,7 +111,7 @@ export function Navbar() {
             legacyBehavior
             passHref>
             <NavigationMenuLink active={pathname === Routes.Projects} className={navigationMenuTriggerStyle()}>
-              progetti
+              projects
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -124,7 +124,7 @@ export function Navbar() {
             legacyBehavior
             passHref>
             <NavigationMenuLink active={pathname === Routes.Contact} className={navigationMenuTriggerStyle()}>
-              contatti
+              contacts
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
@@ -132,7 +132,6 @@ export function Navbar() {
         <NavigationMenuItem key='calendar-menu-item'>
           <CalendarButton variant='ghost' />
         </NavigationMenuItem>
-        {/* <ModeToggle /> */}
       </NavigationMenuList>
     </NavigationMenu>
   )

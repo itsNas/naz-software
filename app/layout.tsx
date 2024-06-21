@@ -11,7 +11,6 @@ import { site, siteBaseMetadata } from "@/config/site"
 import { cn } from "@/lib/utils"
 import { GTM } from "@/components/gtm"
 import { ProgressProvider } from "@/components/progress-provider"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({
@@ -67,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='it-IT'>
+    <html lang='en'>
       <body className={cn(inter.className, biotif.className)}>
         <SpeedInsights />
         <GTM />
@@ -75,7 +74,6 @@ export default function RootLayout({
           <ProgressProvider>
             {children}
             <Toaster />
-            <TailwindIndicator />
           </ProgressProvider>
         </ThemeProvider>
       </body>

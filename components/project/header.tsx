@@ -19,7 +19,7 @@ type Props = {
   image?: string
 }
 
-export function Header({ title, description, icon, url, github, image, slug }: Props) {
+export function Header({ title, description, url, github, image, slug }: Props) {
   return (
     <>
       <div className='space-y-4'>
