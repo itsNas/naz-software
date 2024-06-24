@@ -46,7 +46,7 @@ export async function generateMetadata(_: Props, parent: ResolvingMetadata): Pro
 
 export default function Page() {
   return (
-    <>
+    <section className='sm:py-18 container relative mx-auto mb-0 px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
       <PageTitle
         title='services for businesses and entrepreneurs'
         description='I have been fortunate to meet brilliant entrepreneurs with great ideas. However, they all lacked one thing: the technological knowledge needed to unlock their full potential. I aim to provide the direction necessary to help an entrepreneur achieve any type of success.'
@@ -96,6 +96,6 @@ export default function Page() {
       <Testimonials />
 
       <CtaBusiness medium={UtmMediums.Services} />
-    </>
+    </section>
   )
 }

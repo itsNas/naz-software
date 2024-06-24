@@ -21,7 +21,7 @@ export async function Content({ title, body, url }: Props) {
   return (
     <>
       <div className='mt-8 flex flex-col justify-between lg:flex-row'>
-        <article className='w-full lg:w-[670px]'>
+        <article className='w-full lg:w-[670px] lg:pr-8'>
           <Mdx code={body.code} />
         </article>
         <aside className='hidden lg:block lg:min-w-[270px] lg:max-w-[270px]'>

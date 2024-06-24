@@ -13,7 +13,7 @@ import NowPlaying from "./now-playing"
 
 export function Footer() {
   return (
-    <footer className='mx-auto flex max-w-5xl flex-col px-8 pb-8'>
+    <footer className='container mx-auto border-t py-8 sm:pt-12 lg:px-16'>
       <NowPlaying />
 
       <div className='mt-12 grid grid-cols-2 md:grid-cols-4'>

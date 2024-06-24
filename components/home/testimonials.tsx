@@ -40,7 +40,12 @@ type Props = {
 
 export function Testimonials({ className }: Props) {
   return (
-    <section id='testimonials' className={cn("my-32", className)}>
+    <section
+      id='testimonials'
+      className={cn(
+        "sm:py-18 container relative mx-auto px-6 py-16 md:py-24 lg:px-16 lg:py-24 xl:px-20 mb-0 pb-8",
+        className,
+      )}>
       {/* Testimonial expanded */}
       <div className='relative isolate overflow-hidden px-6 lg:px-8'>
         <div className='mx-auto max-w-2xl lg:max-w-4xl'>

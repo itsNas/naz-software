@@ -4,7 +4,9 @@ import { CtaBusiness } from "@/components/cta-business"
 export function Business() {
   return (
     <>
-      <section id='business' className='mt-32'>
+      <section
+        id='business'
+        className='sm:py-18 container relative mx-auto mb-0 px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
         <div className='mx-auto max-w-7xl pb-8 lg:px-8'>
           <div className='max-w-2xl lg:mx-auto lg:text-center'>
             <h2 className='text-base font-semibold leading-7 text-sky-400'>Services for businesses</h2>

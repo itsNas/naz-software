@@ -60,7 +60,7 @@ export default function Page({ params: { slug } }: Props) {
   }
 
   return (
-    <>
+    <section className='sm:py-18 relative mx-auto mb-0 max-w-5xl px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
       <Header
         slug={slug}
         title={project.title ?? project.name}
@@ -74,6 +74,6 @@ export default function Page({ params: { slug } }: Props) {
       <Content title={project.name} body={project.body} url={absoluteUrl(Routes.LocalBlogPost(slug))} />
 
       <ScrollIndicator />
-    </>
+    </section>
   )
 }

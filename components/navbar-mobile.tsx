@@ -21,7 +21,7 @@ export function NavbarMobile() {
       <DropdownMenu open={open} onOpenChange={setOpen}>
         <DropdownMenuTrigger asChild>
           <Button
-            className='flex size-9 items-center justify-center p-0 md:hidden'
+            className='flex size-9 items-center justify-center p-0 lg:hidden'
             type='button'
             aria-label='Toggle menu'
             title='Toggle menu'

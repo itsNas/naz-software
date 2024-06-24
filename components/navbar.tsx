@@ -22,7 +22,6 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-import { CalendarButton } from "./calendar-button"
 import { Icons } from "./icon"
 import { Badge } from "./ui/badge"
 
@@ -30,7 +29,7 @@ export function Navbar() {
   const pathname = usePathname()
 
   return (
-    <NavigationMenu className='hidden md:block'>
+    <NavigationMenu className='hidden lg:block'>
       <NavigationMenuList key={"navbar"}>
         {/* For Businesses */}
         <NavigationMenuItem key='business-menu-item'>
@@ -116,6 +115,19 @@ export function Navbar() {
           </Link>
         </NavigationMenuItem>
 
+        <NavigationMenuItem key='blog-menu-item'>
+          <Link
+            href={UtmUrl(Routes.Blog, {
+              medium: UtmMediums.Navbar,
+            })}
+            legacyBehavior
+            passHref>
+            <NavigationMenuLink active={pathname === Routes.Blog} className={navigationMenuTriggerStyle()}>
+              blog
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+
         <NavigationMenuItem key='contacts-menu-item'>
           <Link
             href={UtmUrl(Routes.Contact, {
@@ -127,10 +139,6 @@ export function Navbar() {
               contacts
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem key='calendar-menu-item'>
-          <CalendarButton variant='ghost' />
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

@@ -11,7 +11,9 @@ import { Button } from "../ui/button"
 
 export function Services() {
   return (
-    <section id='services' className='my-32'>
+    <section
+      id='services'
+      className='sm:py-18 container relative mx-auto mb-0 px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
       <div className='flex flex-col items-start justify-between gap-4 md:flex-row md:items-end'>
         <div className='flex-auto'>
           <h2 className='text-3xl font-bold'>

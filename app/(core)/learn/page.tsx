@@ -46,7 +46,7 @@ export async function generateMetadata(_: Props, parent: ResolvingMetadata): Pro
 
 export default function Page() {
   return (
-    <>
+    <section className='sm:py-18 container relative mx-auto mb-0 px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
       <PageTitle
         title='impara e cresci con me'
         description='la programmazione ha rivoluzionato la mia vita. Per questo motivo ho creato strumenti e risorse che aiutano centinaia di persone ad imparare a programmare e lanciare la loro carriera.'
@@ -94,6 +94,6 @@ export default function Page() {
           </div>
         ))}
       </section>
-    </>
+    </section>
   )
 }

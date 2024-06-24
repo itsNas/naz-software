@@ -107,7 +107,7 @@ export default function Page({ params: { slug } }: Props) {
   }
 
   return (
-    <>
+    <section className='sm:py-18 relative mx-auto mb-0 max-w-5xl px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
       <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <Header
@@ -126,6 +126,6 @@ export default function Page({ params: { slug } }: Props) {
       <Footer slug={slug} title={post.title} author={post.author} source={BlogPostSource.Local} />
 
       <ScrollIndicator />
-    </>
+    </section>
   )
 }

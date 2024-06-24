@@ -44,7 +44,7 @@ export async function generateMetadata(_: Props, parent: ResolvingMetadata): Pro
 
 export default function Page() {
   return (
-    <>
+    <section className='sm:py-18 container relative mx-auto mb-0 px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
       <PageTitle
         title='my projects'
         description='Explore the projects I have completed in the past. Some projects were born from my personal needs, while others are the result of collaborations with brilliant entrepreneurs motivated to turn ideas into reality. Every work, however, was driven by the same desire to overcome challenges and achieve extraordinary results.'
@@ -94,6 +94,6 @@ export default function Page() {
             <ProjectCollabCard key={project._id} project={project} />
           ))}
       </div>
-    </>
+    </section>
   )
 }

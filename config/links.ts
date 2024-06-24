@@ -12,27 +12,27 @@ export const HeaderLinks: HeaderLinks = [
   {
     icon: "servicesPage",
     href: Routes.Services,
-    text: "per le aziende",
+    text: "for businesses",
   },
   {
     icon: "learningProductsPage",
     href: Routes.LearningProducts,
-    text: "prodotti di formazione",
+    text: "training products",
   },
   {
     icon: "projectsPage",
     href: Routes.Projects,
-    text: "progetti",
+    text: "projects",
   },
   {
     icon: "contactsPage",
     href: Routes.Contact,
-    text: "contatti",
+    text: "contacts",
   },
   {
     icon: "blogPage",
     href: Routes.Blog,
-    text: "articoli",
+    text: "articles",
   },
 ]
 
@@ -50,23 +50,23 @@ export const FooterLinkGroups: FooterLinkGroups = [
     links: [
       {
         href: Routes.Services,
-        title: "servizi per le aziende",
+        title: "services for businesses",
       },
       {
         href: Routes.LearningProducts,
-        title: "prodotti di formazione",
+        title: "training products",
       },
       {
         href: Routes.Projects,
-        title: "progetti",
+        title: "projects",
       },
       {
         href: Routes.Contact,
-        title: "contatti",
+        title: "contacts",
       },
       {
         href: Routes.Blog,
-        title: "articoli",
+        title: "articles",
       },
     ],
   },
@@ -128,13 +128,13 @@ type ContactLinks = {
 export const ContactLinks: ContactLinks = [
   {
     name: "Personal",
-    mailto: "hi@matteogiardino.com",
+    mailto: "nbensaloji@gmail.com",
     icon: "email",
     logo: "/images/mg-logo-white.webp",
   },
   {
     name: "Wezard",
-    mailto: "matteo@wezard.it",
+    mailto: "nas@snapshorts.ai",
     icon: "email",
     logo: "/images/brands/wezard-icon.png",
   },

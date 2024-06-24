@@ -117,7 +117,7 @@ export default async function BlogPostPage({ params: { slug } }: { params: { slu
   }
 
   return (
-    <>
+    <section className='sm:py-18 relative mx-auto mb-0 max-w-5xl px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
       <script type='application/ld+json' dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <Header
@@ -162,6 +162,6 @@ export default async function BlogPostPage({ params: { slug } }: { params: { slu
       <Footer slug={slug} title={post.title} source={BlogPostSource.Substack} author={post.author} />
 
       <ScrollIndicator />
-    </>
+    </section>
   )
 }

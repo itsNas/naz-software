@@ -19,11 +19,12 @@ export function CalendarButton(props: ButtonProps) {
 
   return (
     <Button
+      variant='default'
       data-cal-namespace=''
       data-cal-link='matteo-giardino/19min'
       data-cal-config='{"layout":"month_view"}'
       {...props}>
-      schedule a call
+      Schedule a Call
     </Button>
   )
 }

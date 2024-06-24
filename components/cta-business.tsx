@@ -15,7 +15,11 @@ type Props = {
 export function CtaBusiness({ medium, className }: Props) {
   return (
     <>
-      <section className={cn("relative py-16", className)}>
+      <section
+        className={cn(
+          "sm:py-18 container relative mx-auto mb-0 px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20",
+          className,
+        )}>
         <Background />
 
         <div className='relative isolate overflow-hidden rounded-3xl border bg-muted px-6 pt-8 shadow-2xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0'>

@@ -45,7 +45,7 @@ export async function generateMetadata(_: Props, parent: ResolvingMetadata): Pro
 
 export default function Page() {
   return (
-    <>
+    <section className='sm:py-18 container relative mx-auto mb-0 px-6 py-16 pb-8 md:py-24 lg:px-16 lg:py-24 xl:px-20'>
       <PageTitle
         title='How to contact me'
         description='Whether you want to get to know me, talk to me about a project, or collaborate, write to me. Something beautiful always comes from a message.'
@@ -100,6 +100,6 @@ export default function Page() {
           )
         })}
       </div>
-    </>
+    </section>
   )
 }
