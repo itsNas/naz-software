@@ -1,18 +1,23 @@
-﻿import React from "react"
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs"
+﻿import { auth } from "@clerk/nextjs/server"
+
+import { SessionDetails, UserDetails } from "./details"
+import { OnboardingDetails } from "./onboarding-details"
 
 export default function Dashboard() {
+  const { userId, sessionClaims } = auth()
+
   return (
-    <div>
-      <h1>My App</h1>
-      <SignedIn>
-        {/* Mount the UserButton component */}
-        <UserButton />
-      </SignedIn>
-      <SignedOut>
-        {/* Signed out users get sign in button */}
-        <SignInButton />
-      </SignedOut>
+    <div className='px-8 py-12 sm:py-16 md:px-20'>
+      {userId && (
+        <>
+          <h1 className='text-3xl font-semibold text-black'>👋 Hi, {sessionClaims?.firstName || `Stranger`}</h1>
+          <div className='mt-8 grid gap-4 lg:grid-cols-3'>
+            <UserDetails />
+            <SessionDetails />
+            <OnboardingDetails />
+          </div>
+        </>
+      )}
     </div>
   )
 }
