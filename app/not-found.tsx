@@ -10,14 +10,14 @@ export const metadata = {
 export default function NotFound() {
   return (
     <div className='mb-40 mt-52 flex flex-col items-center justify-center gap-12'>
-      <h1 className='text-center text-6xl font-bold'>oopz qui non c'è nulla.</h1>
+      <h1 className='text-center text-6xl font-bold'>Oops, there's nothing here.</h1>
       <Link
         href={UtmUrl("/", {
           medium: UtmMediums.Homepage,
           content: "hero",
         })}
         className='rounded-lg border px-3 py-2 transition-colors duration-150'>
-        vai alla home
+        go to homepage
       </Link>
     </div>
   )
