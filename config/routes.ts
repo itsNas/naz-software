@@ -40,4 +40,6 @@ export const Routes = {
   tcl: TclRoutes,
   tcb: TcbRoutes,
   pl: PlRoutes,
+  SignIn: "/sign-in",
+  SignUp: "/sign-up",
 }

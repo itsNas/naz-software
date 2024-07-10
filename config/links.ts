@@ -34,6 +34,11 @@ export const HeaderLinks: HeaderLinks = [
     href: Routes.Blog,
     text: "articles",
   },
+  {
+    icon: "signInPage",
+    href: Routes.SignIn,
+    text: "sign in",
+  },
 ]
 
 type FooterLinkGroups = {

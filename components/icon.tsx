@@ -10,6 +10,7 @@ import {
   IconFlame,
   IconInfoSquareRounded,
   IconListDetails,
+  IconLogin,
   IconMessageCircle,
   IconPencil,
   IconSchool,
@@ -37,6 +38,7 @@ export const Icons = {
   projectsPage: IconFlame,
   contactsPage: IconMessageCircle,
   blogPage: IconPencil,
+  signInPage: IconLogin,
 
   plWhatIsSection: IconInfoSquareRounded,
   plIsForYouSection: IconFlame,

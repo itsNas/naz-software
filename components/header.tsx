@@ -7,6 +7,7 @@ import { NavbarMobile } from "@/components/navbar-mobile"
 
 import { CalendarButton } from "./calendar-button"
 import { ModeToggle } from "./mode-toggle"
+import { SignInButton } from "./signin-button"
 
 export function Header() {
   return (
@@ -25,6 +26,7 @@ export function Header() {
         </div>
         <div className='flex items-center gap-2'>
           <ModeToggle />
+          <SignInButton className='hidden lg:block' />
           <CalendarButton className='hidden lg:block' />
           <NavbarMobile />
         </div>
