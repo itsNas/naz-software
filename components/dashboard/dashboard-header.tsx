@@ -7,6 +7,7 @@ import { OrganizationSwitcher, UserButton } from "@clerk/nextjs"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
 import { ActiveLink } from "../active-link"
+import { ModeToggle } from "../mode-toggle"
 import { ToggleMenuButton } from "../toggle-menu-button"
 
 const DashboardHeader = (props: {
@@ -75,6 +76,10 @@ const DashboardHeader = (props: {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
+          </li>
+
+          <li>
+            <ModeToggle />
           </li>
 
           <li>
