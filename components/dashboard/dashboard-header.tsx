@@ -1,12 +1,14 @@
 ﻿"use client"
 
 import Link from "next/link"
-// import { Logo } from "@/templates/Logo"
+import { getI18nPath } from "@/utils/helpers"
 import { OrganizationSwitcher, UserButton } from "@clerk/nextjs"
+import { useLocale } from "next-intl"
 
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 
 import { ActiveLink } from "../active-link"
+import LocaleSwitcher from "../locale-switcher"
 import { ModeToggle } from "../mode-toggle"
 import { ToggleMenuButton } from "../toggle-menu-button"
 
@@ -16,11 +18,12 @@ const DashboardHeader = (props: {
     label: string
   }[]
 }) => {
+  const locale = useLocale()
+
   return (
     <>
       <div className='flex items-center'>
         <Link href='/dashboard' className='max-sm:hidden'>
-          {/* <Logo /> */}
           Logo
         </Link>
 
@@ -37,7 +40,7 @@ const DashboardHeader = (props: {
 
         <OrganizationSwitcher
           organizationProfileMode='navigation'
-          organizationProfileUrl='/dashboard/organization-profile'
+          organizationProfileUrl={getI18nPath("/dashboard/organization-profile", locale)}
           afterCreateOrganizationUrl='/dashboard'
           hidePersonal
           skipInvitationScreen
@@ -76,6 +79,10 @@ const DashboardHeader = (props: {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
+          </li>
+
+          <li>
+            <LocaleSwitcher />
           </li>
 
           <li>

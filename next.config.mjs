@@ -1,6 +1,14 @@
+import { fileURLToPath } from "node:url"
+import createJiti from "jiti"
 import { withContentlayer } from "next-contentlayer"
+import withNextIntl from "next-intl/plugin"
 
 import "./env.mjs"
+
+const jiti = createJiti(fileURLToPath(import.meta.url))
+jiti("./env.mjs")
+
+const withNextIntlConfig = withNextIntl("./lib/i18n.ts")
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -34,5 +42,4 @@ const nextConfig = {
     return config
   },
 }
-
-export default withContentlayer(nextConfig)
+export default withContentlayer(withNextIntlConfig(nextConfig))
