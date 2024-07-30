@@ -1,4 +1,4 @@
-﻿import { PLAN_ID } from "@/utils/app-config"
+﻿import { PLAN_ID } from "@/config/app-config"
 
 import type { EnumValues } from "./enum"
 

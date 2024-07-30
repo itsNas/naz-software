@@ -1,8 +1,8 @@
 ﻿"use client"
 
-import { AppConfig } from "@/utils/app-config"
 import { useLocale } from "next-intl"
 
+import { AppConfig } from "@/config/app-config"
 import { usePathname, useRouter } from "@/lib/i18nNavigation"
 import { Button } from "@/components/ui/button"
 import {

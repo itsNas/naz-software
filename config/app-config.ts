@@ -1,4 +1,4 @@
-﻿import { LocalePrefix } from "next-intl/dist/types/src/routing/types"
+﻿import { LocalePrefix } from "next-intl/routing"
 
 import { BILLING_INTERVAL, type PricingPlan } from "@/types/subscription"
 

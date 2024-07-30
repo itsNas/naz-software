@@ -5,6 +5,7 @@ import localFont from "next/font/local"
 import "../styles/globals.css"
 
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { NextIntlClientProvider, useMessages } from "next-intl"
 import { Toaster } from "sonner"
 
 import { site, siteBaseMetadata } from "@/config/site"
@@ -60,11 +61,12 @@ export const viewport: Viewport = {
   ],
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout(props: { children: React.ReactNode; params: { locale: string } }) {
+  // Validate that the incoming `locale` parameter is valid
+  // if (!AllLocales.includes(props.params.locale)) notFound()
+
+  // Using internationalization in Client Components
+  const messages = useMessages()
   return (
     <html lang='en'>
       <body className={cn(inter.className, biotif.className)}>
@@ -72,7 +74,9 @@ export default function RootLayout({
         <GTM />
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem={true} disableTransitionOnChange>
           <ProgressProvider>
-            {children}
+            <NextIntlClientProvider locale={props.params.locale} messages={messages}>
+              {props.children}
+            </NextIntlClientProvider>
             <Toaster />
           </ProgressProvider>
         </ThemeProvider>
